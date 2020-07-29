@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Footer</title>
+		<link rel="stylesheet" href="./footer.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<style>
+		body {
+            margin:0;
+            background:transparent;
+        }
+        #menuDemo { text-align:center; padding:30px 8px; }
+    </style>
+</head>
+	</head>
+	<body>
+		<div id="menuDemo">
+			<!--start CssMenu-->
+			<div class="menu-icon-wrapper">
+				<div class="menu-icon" onclick="toggleCssMenu(this)">
+					<div class="three-line">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div id="cssmenu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Services</a></li>
+					<button><a href="#"> Get Started</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+					</button>
+					<!-- <li><a href="#">Contact</a></li> -->
+				</ul>
+			</div>
+			<script>
+				function toggleCssMenu(icon) {
+					var cssmenu = document.getElementById('cssmenu');
+					if (icon.className.indexOf('active') == -1) {
+						icon.className = 'menu-icon active';
+						cssmenu.style.display = "block";
+						setTimeout(function(){cssmenu.className = 'active';},0);            
+					}
+					else {
+						icon.className = 'menu-icon';
+						cssmenu.className = '';
+						setTimeout(function(){cssmenu.style.display = "none";},411); 
+					}
+				}
+			</script>
+			<!--end CssMenu-->
+			</div>
+
+
+		<footer>
+		<div class="container">
+			<h4>Agency 2.0</h4>
+			<p>
+				<span> Junto is redefining the way digital agencies work.</span> We make
+				digital marketing simple, approachable, and results-driven. Junto's
+				in-house marketing experts collaborate with top-vetted freelancers from
+				around the world to deliver SEO, content marketing, and web development
+				services to companies at an unparalleled value.
+			</p>
+			<div class="btn">
+				<h2>
+					<a href="#">Learn more about us</a
+					><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</h2>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="sec1">
+				<p><div class="logo"><img src="../Logo/junto-logo-white.png" alt="logo"></div>
+					We’re a Denver-based Digital Marketing agency powered by top-vetted
+					freelancers from around the globe.
+				</p>
+				<div class="mail">hello@junto.digital</div>
+			</div>
+			<div class="sec2">
+				<ul>
+					<li class="same">About</li>
+					<li><a href="#"> About</a></li>
+					<li><a href="#"> Contact Us</a></li>
+					<li><a href="#"> Careers</a></li>
+				</ul>
+			</div>
+			<div class="sec3">
+				<ul>
+					<li class="same">SERVICES</li>
+					<li><a href="#"> Content Marketing</a></li>
+					<li><a href="#"> Website Developments</a></li>
+				</ul>
+			</div>
+			<div class="sec4">
+				<ul>
+					<li class="same">KEP IN TOUCH</li>
+					<li><a href="#"> Facebook</a></li>
+					<li><a href="#"> Twitter</a></li>
+					<li><a href="#"> LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <div class="bottom-footer">  
+	  <ul>
+
+		<li>&copy;rights2020 SixFour Creative LLC</li>
+		<li> 720-295-0483</li>
+	    <li>Born in Denver, Colorado </li>
+		<li> 2806 N. Speer Blvd Denver, CO 80211</li>
+		<li> Terms & Conditions</li>
+		<li class="fafa"> <p> <i class="fa fa-shield" aria-hidden="true"></i>Privacy Policy</p></li>
+	    <li class="fafa"><P><i class="fa fa-shield" aria-hidden="true"></i>Cookie Policy</P></li>
+
+    </ul>
+</div>
+	</body>
+</html>
